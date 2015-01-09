@@ -4,7 +4,8 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "This is iOS modules and project for making robot application with ROS(Robot Operating System)."
   s.homepage     = "https://github.com/furushchev/ROSiOS.git"
-  s.license      = "MIT"
+  s.license      = { :type => "MIT",
+                     :file => "LICENSE" }
   s.author       = { "Yuki Furuta" => "furushchev@jsk.imi.i.u-tokyo.ac.jp" }
   s.social_media_url   = "http://twitter.com/furushchev"
   s.platform     = :ios, "6.0"
