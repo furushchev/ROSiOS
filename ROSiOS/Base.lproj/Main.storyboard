@@ -1,25 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Uug-RV-ie9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="J1j-9V-MbK">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <navigationController id="Uug-RV-ie9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y64-38-zla">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="3AK-Mz-e2Y" kind="relationship" relationship="rootViewController" id="okp-eH-1Ti"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dm2-wP-ube" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-369" y="505"/>
+        </scene>
+        <!--Configuration-->
+        <scene sceneID="rHY-KL-hNb">
+            <objects>
+                <viewController id="3AK-Mz-e2Y" customClass="ConfigurationViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="j36-yE-lAe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hp6-r3-Qfj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="ULo-II-uP1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROS Master URI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdI-KD-7vN">
+                                <rect key="frame" x="36" y="114" width="127" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFn-dk-luG">
+                                <rect key="frame" x="46" y="164" width="508" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPu-Ye-CrY">
+                                <rect key="frame" x="36" y="223" width="54.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT9-Dp-X6b">
+                                <rect key="frame" x="277" y="251" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ4-kO-sGm">
+                                <rect key="frame" x="277" y="291" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcz-ly-3CP">
+                                <rect key="frame" x="277" y="331" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzV-jb-TIC">
+                                <rect key="frame" x="277" y="371" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHi-XB-bTr">
+                                <rect key="frame" x="277" y="411" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vT9-Dp-X6b" firstAttribute="centerX" secondItem="bQ4-kO-sGm" secondAttribute="centerX" id="03d-4J-qmu"/>
+                            <constraint firstItem="lHi-XB-bTr" firstAttribute="top" secondItem="CzV-jb-TIC" secondAttribute="bottom" constant="10" id="0oE-FI-6aB"/>
+                            <constraint firstItem="NdI-KD-7vN" firstAttribute="leading" secondItem="LPu-Ye-CrY" secondAttribute="leading" id="78B-te-aAc"/>
+                            <constraint firstItem="LPu-Ye-CrY" firstAttribute="top" secondItem="IFn-dk-luG" secondAttribute="top" constant="59" id="8Zz-SS-lw5"/>
+                            <constraint firstItem="NdI-KD-7vN" firstAttribute="leading" secondItem="ULo-II-uP1" secondAttribute="leadingMargin" constant="20" id="8ux-E5-d9Q"/>
+                            <constraint firstItem="NdI-KD-7vN" firstAttribute="top" secondItem="j36-yE-lAe" secondAttribute="bottom" constant="50" id="B1g-oh-yxj"/>
+                            <constraint firstItem="vT9-Dp-X6b" firstAttribute="top" secondItem="LPu-Ye-CrY" secondAttribute="top" constant="28" id="Jvp-Qw-JeC"/>
+                            <constraint firstItem="bcz-ly-3CP" firstAttribute="top" secondItem="bQ4-kO-sGm" secondAttribute="bottom" constant="10" id="Rhs-tG-h5B"/>
+                            <constraint firstItem="CzV-jb-TIC" firstAttribute="top" secondItem="bcz-ly-3CP" secondAttribute="bottom" constant="10" id="T2b-Ey-dVa"/>
+                            <constraint firstItem="bQ4-kO-sGm" firstAttribute="top" secondItem="vT9-Dp-X6b" secondAttribute="bottom" constant="10" id="Wpv-Vx-wpg"/>
+                            <constraint firstItem="IFn-dk-luG" firstAttribute="leading" secondItem="ULo-II-uP1" secondAttribute="leadingMargin" constant="30" id="dN6-lp-fke"/>
+                            <constraint firstItem="NdI-KD-7vN" firstAttribute="top" secondItem="IFn-dk-luG" secondAttribute="top" constant="-50" id="hXt-1U-x1O"/>
+                            <constraint firstItem="IFn-dk-luG" firstAttribute="centerX" secondItem="vT9-Dp-X6b" secondAttribute="centerX" id="jxf-az-yUw"/>
+                            <constraint firstAttribute="centerX" secondItem="IFn-dk-luG" secondAttribute="centerX" id="rAw-vK-bDq"/>
+                            <constraint firstItem="vT9-Dp-X6b" firstAttribute="centerX" secondItem="CzV-jb-TIC" secondAttribute="centerX" id="sEg-Dq-Pvd"/>
+                            <constraint firstItem="vT9-Dp-X6b" firstAttribute="centerX" secondItem="bcz-ly-3CP" secondAttribute="centerX" id="sUb-0D-naz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IFn-dk-luG" secondAttribute="trailing" constant="30" id="xE3-5i-Xpj"/>
+                            <constraint firstItem="vT9-Dp-X6b" firstAttribute="centerX" secondItem="lHi-XB-bTr" secondAttribute="centerX" id="zG8-lx-HXr"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Configuration" id="lUD-6g-LLn">
+                        <barButtonItem key="rightBarButtonItem" title="OK" id="dyC-eG-L2M"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="historyButton1" destination="vT9-Dp-X6b" id="YyX-T1-pim"/>
+                        <outlet property="historyButton2" destination="bQ4-kO-sGm" id="qCI-lt-mt2"/>
+                        <outlet property="historyButton3" destination="bcz-ly-3CP" id="Kmb-KB-47s"/>
+                        <outlet property="historyButton4" destination="CzV-jb-TIC" id="uQH-jA-cKW"/>
+                        <outlet property="historyButton5" destination="lHi-XB-bTr" id="cl8-Jv-Xou"/>
+                        <outlet property="uriTextField" destination="IFn-dk-luG" id="ATp-TJ-9WZ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tvb-ZX-30n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="351" y="505"/>
         </scene>
     </scenes>
 </document>

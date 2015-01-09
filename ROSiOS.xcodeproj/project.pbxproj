@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		F80816281A5FB4980098EED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F80816271A5FB4980098EED6 /* main.m */; };
 		F808162B1A5FB4980098EED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F808162A1A5FB4980098EED6 /* AppDelegate.m */; };
-		F808162E1A5FB4980098EED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F808162D1A5FB4980098EED6 /* ViewController.m */; };
 		F80816311A5FB4980098EED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F808162F1A5FB4980098EED6 /* Main.storyboard */; };
 		F80816331A5FB4980098EED6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80816321A5FB4980098EED6 /* Images.xcassets */; };
 		F80816361A5FB4980098EED6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F80816341A5FB4980098EED6 /* LaunchScreen.xib */; };
 		F80816421A5FB4980098EED6 /* ROSiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F80816411A5FB4980098EED6 /* ROSiOSTests.m */; };
+		F808164D1A5FB4AF0098EED6 /* ConfigurationViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F808164C1A5FB4AF0098EED6 /* ConfigurationViewController.mm */; };
+		F80816601A5FB5710098EED6 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F808165F1A5FB5700098EED6 /* libiconv.dylib */; };
+		F80816691A5FB69F0098EED6 /* boost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80816611A5FB69F0098EED6 /* boost.framework */; };
+		F808166A1A5FB69F0098EED6 /* geometry_msgs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80816621A5FB69F0098EED6 /* geometry_msgs.framework */; };
+		F808166B1A5FB69F0098EED6 /* log4cxx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80816631A5FB69F0098EED6 /* log4cxx.framework */; };
+		F808166C1A5FB69F0098EED6 /* nav_msgs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80816641A5FB69F0098EED6 /* nav_msgs.framework */; };
+		F808166D1A5FB69F0098EED6 /* ros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80816651A5FB69F0098EED6 /* ros.framework */; };
+		F808166E1A5FB69F0098EED6 /* rosgraph_msgs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80816661A5FB69F0098EED6 /* rosgraph_msgs.framework */; };
+		F808166F1A5FB69F0098EED6 /* sensor_msgs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80816671A5FB69F0098EED6 /* sensor_msgs.framework */; };
+		F80816701A5FB69F0098EED6 /* std_msgs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F80816681A5FB69F0098EED6 /* std_msgs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +41,23 @@
 		F80816271A5FB4980098EED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F80816291A5FB4980098EED6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F808162A1A5FB4980098EED6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F808162C1A5FB4980098EED6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F808162D1A5FB4980098EED6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F80816301A5FB4980098EED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F80816321A5FB4980098EED6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F80816351A5FB4980098EED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F808163B1A5FB4980098EED6 /* ROSiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROSiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80816401A5FB4980098EED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F80816411A5FB4980098EED6 /* ROSiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ROSiOSTests.m; sourceTree = "<group>"; };
+		F808164B1A5FB4AF0098EED6 /* ConfigurationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigurationViewController.h; sourceTree = "<group>"; };
+		F808164C1A5FB4AF0098EED6 /* ConfigurationViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConfigurationViewController.mm; sourceTree = "<group>"; };
+		F808165F1A5FB5700098EED6 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		F80816611A5FB69F0098EED6 /* boost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = boost.framework; path = frameworks/boost.framework; sourceTree = SOURCE_ROOT; };
+		F80816621A5FB69F0098EED6 /* geometry_msgs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = geometry_msgs.framework; path = frameworks/geometry_msgs.framework; sourceTree = SOURCE_ROOT; };
+		F80816631A5FB69F0098EED6 /* log4cxx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = log4cxx.framework; path = frameworks/log4cxx.framework; sourceTree = SOURCE_ROOT; };
+		F80816641A5FB69F0098EED6 /* nav_msgs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = nav_msgs.framework; path = frameworks/nav_msgs.framework; sourceTree = SOURCE_ROOT; };
+		F80816651A5FB69F0098EED6 /* ros.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ros.framework; path = frameworks/ros.framework; sourceTree = SOURCE_ROOT; };
+		F80816661A5FB69F0098EED6 /* rosgraph_msgs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = rosgraph_msgs.framework; path = frameworks/rosgraph_msgs.framework; sourceTree = SOURCE_ROOT; };
+		F80816671A5FB69F0098EED6 /* sensor_msgs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sensor_msgs.framework; path = frameworks/sensor_msgs.framework; sourceTree = SOURCE_ROOT; };
+		F80816681A5FB69F0098EED6 /* std_msgs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = std_msgs.framework; path = frameworks/std_msgs.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +65,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80816691A5FB69F0098EED6 /* boost.framework in Frameworks */,
+				F808166D1A5FB69F0098EED6 /* ros.framework in Frameworks */,
+				F808166C1A5FB69F0098EED6 /* nav_msgs.framework in Frameworks */,
+				F808166A1A5FB69F0098EED6 /* geometry_msgs.framework in Frameworks */,
+				F808166F1A5FB69F0098EED6 /* sensor_msgs.framework in Frameworks */,
+				F808166B1A5FB69F0098EED6 /* log4cxx.framework in Frameworks */,
+				F80816601A5FB5710098EED6 /* libiconv.dylib in Frameworks */,
+				F808166E1A5FB69F0098EED6 /* rosgraph_msgs.framework in Frameworks */,
+				F80816701A5FB69F0098EED6 /* std_msgs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +108,11 @@
 		F80816241A5FB4980098EED6 /* ROSiOS */ = {
 			isa = PBXGroup;
 			children = (
+				F808165E1A5FB5470098EED6 /* Frameworks */,
 				F80816291A5FB4980098EED6 /* AppDelegate.h */,
 				F808162A1A5FB4980098EED6 /* AppDelegate.m */,
-				F808162C1A5FB4980098EED6 /* ViewController.h */,
-				F808162D1A5FB4980098EED6 /* ViewController.m */,
+				F808164B1A5FB4AF0098EED6 /* ConfigurationViewController.h */,
+				F808164C1A5FB4AF0098EED6 /* ConfigurationViewController.mm */,
 				F808162F1A5FB4980098EED6 /* Main.storyboard */,
 				F80816321A5FB4980098EED6 /* Images.xcassets */,
 				F80816341A5FB4980098EED6 /* LaunchScreen.xib */,
@@ -117,6 +145,22 @@
 				F80816401A5FB4980098EED6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F808165E1A5FB5470098EED6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F80816611A5FB69F0098EED6 /* boost.framework */,
+				F80816621A5FB69F0098EED6 /* geometry_msgs.framework */,
+				F80816631A5FB69F0098EED6 /* log4cxx.framework */,
+				F80816641A5FB69F0098EED6 /* nav_msgs.framework */,
+				F80816651A5FB69F0098EED6 /* ros.framework */,
+				F80816661A5FB69F0098EED6 /* rosgraph_msgs.framework */,
+				F80816671A5FB69F0098EED6 /* sensor_msgs.framework */,
+				F80816681A5FB69F0098EED6 /* std_msgs.framework */,
+				F808165F1A5FB5700098EED6 /* libiconv.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F808162E1A5FB4980098EED6 /* ViewController.m in Sources */,
 				F808162B1A5FB4980098EED6 /* AppDelegate.m in Sources */,
 				F80816281A5FB4980098EED6 /* main.m in Sources */,
+				F808164D1A5FB4AF0098EED6 /* ConfigurationViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +389,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ROSiOS",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				INFOPLIST_FILE = ROSiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,7 +405,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ROSiOS",
+					"$(PROJECT_DIR)/frameworks",
+				);
 				INFOPLIST_FILE = ROSiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
