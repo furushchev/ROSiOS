@@ -14,7 +14,7 @@ This is a bootstrap package for creating iOS App using ROS(Robot Operating Syste
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/*.{h,mm}'
+  s.source_files = 'Pod/Classes'
   s.resource_bundles = {
     'ROSiOS' => ['Pod/Assets/Configuration.storyboard']
   }
