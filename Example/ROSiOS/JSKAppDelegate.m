@@ -12,7 +12,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // set configuration view before entering main story board
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"ROSiOS" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:path];
+    UIStoryboard *configureStoryboard = [UIStoryboard storyboardWithName:@"Configuration" bundle:bundle];
+    
+    self.window.rootViewController = [configureStoryboard instantiateInitialViewController];
+    
+    // set this rosnode name
+    NSString *nodeName = @"ros_ios_sample_app";
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    [ud setObject:nodeName forKey:@"kROSiOSNodeNameKey"]; // DO NOT CHANGE!
+    [ud synchronize];
+    
     return YES;
 }
 							
