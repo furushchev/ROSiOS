@@ -7,9 +7,13 @@
 
 ## Usage
 
+**TODO**
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+**TODO**
 
 ## Installation
 
@@ -20,7 +24,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Furushchev, furushchev@jsk.imi.i.u-tokyo.ac.jp
+Yuki Furuta, furushchev@jsk.imi.i.u-tokyo.ac.jp
 
 ## License
 
