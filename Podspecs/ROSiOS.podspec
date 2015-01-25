@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = "ROSiOS"
-  s.version          = "0.0.2"
+  s.version          = "0.0.3"
   s.summary          = "template package of ROSiOS."
   s.description      = <<-DESC
 This is a bootstrap package for creating iOS App using ROS(Robot Operating System).
+This includes some examples (Topic Viewer, Talker and Listener) on Example directory.
                        DESC
   s.homepage         = "https://github.com/furushchev/ROSiOS"
   s.license          = {:type => 'MIT'}
