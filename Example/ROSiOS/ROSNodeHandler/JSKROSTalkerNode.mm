@@ -36,6 +36,8 @@ std::string JSKROSTalkerNode::publish(int count)
     ss << "hello world " << count;
     msg.data = ss.str();
     
+    pub_.publish(msg);
+    
     ROS_INFO("%s", msg.data.c_str());
     
     return msg.data;
