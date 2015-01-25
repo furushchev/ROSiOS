@@ -2,10 +2,10 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'ROSiOS', :exclusive => true do
   pod "ROSiOS", :path => "../"
+  pod "ROSiOS-std_msgs"
 end
 
 target 'Tests', :exclusive => true do
   pod "ROSiOS", :path => "../"
-
-  
+  pod "ROSiOS-std_msgs"
 end

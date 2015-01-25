@@ -26,6 +26,10 @@
 		F85648151A7132E000A42326 /* JSKTopicListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F85648131A7132E000A42326 /* JSKTopicListTableViewCell.m */; };
 		F85648171A71356E00A42326 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85648161A71356E00A42326 /* LaunchScreen.xib */; };
 		F856481A1A7135F400A42326 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85648181A7135F400A42326 /* Main.storyboard */; };
+		F89FB76A1A7462E700087CAB /* JSKROSTalkerNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = F89FB7691A7462E700087CAB /* JSKROSTalkerNode.mm */; };
+		F89FB76D1A74665200087CAB /* JSKTalkerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F89FB76C1A74665200087CAB /* JSKTalkerViewController.mm */; };
+		F89FB7701A746ED300087CAB /* JSKListenerViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F89FB76F1A746ED300087CAB /* JSKListenerViewController.mm */; };
+		F89FB7761A746F0C00087CAB /* JSKROSListenerNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = F89FB7751A746F0C00087CAB /* JSKROSListenerNode.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,14 @@
 		F85648131A7132E000A42326 /* JSKTopicListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSKTopicListTableViewCell.m; sourceTree = "<group>"; };
 		F85648161A71356E00A42326 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		F85648191A7135F400A42326 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ROSiOS/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F89FB7681A7462E700087CAB /* JSKROSTalkerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSKROSTalkerNode.h; path = ROSNodeHandler/JSKROSTalkerNode.h; sourceTree = "<group>"; };
+		F89FB7691A7462E700087CAB /* JSKROSTalkerNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JSKROSTalkerNode.mm; path = ROSNodeHandler/JSKROSTalkerNode.mm; sourceTree = "<group>"; };
+		F89FB76B1A74665200087CAB /* JSKTalkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKTalkerViewController.h; sourceTree = "<group>"; };
+		F89FB76C1A74665200087CAB /* JSKTalkerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JSKTalkerViewController.mm; sourceTree = "<group>"; };
+		F89FB76E1A746ED300087CAB /* JSKListenerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSKListenerViewController.h; sourceTree = "<group>"; };
+		F89FB76F1A746ED300087CAB /* JSKListenerViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JSKListenerViewController.mm; sourceTree = "<group>"; };
+		F89FB7741A746F0C00087CAB /* JSKROSListenerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSKROSListenerNode.h; path = ROSNodeHandler/JSKROSListenerNode.h; sourceTree = "<group>"; };
+		F89FB7751A746F0C00087CAB /* JSKROSListenerNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = JSKROSListenerNode.mm; path = ROSNodeHandler/JSKROSListenerNode.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +170,14 @@
 				F85648121A7132E000A42326 /* JSKTopicListTableViewCell.h */,
 				F85648131A7132E000A42326 /* JSKTopicListTableViewCell.m */,
 				F85648181A7135F400A42326 /* Main.storyboard */,
+				F89FB7741A746F0C00087CAB /* JSKROSListenerNode.h */,
+				F89FB7751A746F0C00087CAB /* JSKROSListenerNode.mm */,
+				F89FB76E1A746ED300087CAB /* JSKListenerViewController.h */,
+				F89FB76F1A746ED300087CAB /* JSKListenerViewController.mm */,
+				F89FB7681A7462E700087CAB /* JSKROSTalkerNode.h */,
+				F89FB7691A7462E700087CAB /* JSKROSTalkerNode.mm */,
+				F89FB76B1A74665200087CAB /* JSKTalkerViewController.h */,
+				F89FB76C1A74665200087CAB /* JSKTalkerViewController.mm */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				F85648161A71356E00A42326 /* LaunchScreen.xib */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -374,8 +394,12 @@
 			files = (
 				6003F59E195388D20070C39A /* JSKAppDelegate.m in Sources */,
 				F85648141A7132E000A42326 /* JSKTopicListTableViewController.mm in Sources */,
+				F89FB76A1A7462E700087CAB /* JSKROSTalkerNode.mm in Sources */,
+				F89FB7701A746ED300087CAB /* JSKListenerViewController.mm in Sources */,
+				F89FB76D1A74665200087CAB /* JSKTalkerViewController.mm in Sources */,
 				6003F5A7195388D20070C39A /* JSKViewController.mm in Sources */,
 				F85648151A7132E000A42326 /* JSKTopicListTableViewCell.m in Sources */,
+				F89FB7761A746F0C00087CAB /* JSKROSListenerNode.mm in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
