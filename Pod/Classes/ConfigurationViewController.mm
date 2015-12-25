@@ -50,6 +50,7 @@ static UIStoryboard *_sharedMainStoryBoard = nil;
 @property (weak, nonatomic) IBOutlet UIButton *historyButton5;
 @property (strong, nonatomic) NSArray *historyButtons;
 @property (strong, readonly) NSString *nodeName;
+@property (readonly) BOOL anonymous;
 @end
 
 @implementation ConfigurationViewController
@@ -64,6 +65,7 @@ static UIStoryboard *_sharedMainStoryBoard = nil;
     } else {
         _nodeName = @"ros_ios_app";
     }
+    _anonymous = [ud boolForKey:@"kROSiOSNodeAnonymous"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -133,7 +135,11 @@ static UIStoryboard *_sharedMainStoryBoard = nil;
         
         if(!ros::isInitialized())
         {
-            ros::init(argc, argv, [self.nodeName UTF8String]);
+            if (self.anonymous) {
+                ros::init(argc, argv, [self.nodeName UTF8String], ros::init_options::AnonymousName);
+            } else {
+                ros::init(argc, argv, [self.nodeName UTF8String]);
+            }
         }
         else
         {
