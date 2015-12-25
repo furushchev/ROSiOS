@@ -1,6 +1,6 @@
 # ROSiOS
 
-[![CI Status](http://img.shields.io/travis/Furushchev/ROSiOS.svg?style=flat)](https://travis-ci.org/Furushchev/ROSiOS)
+[![CI Status](http://img.shields.io/travis/furushchev/ROSiOS.svg?style=flat)](https://travis-ci.org/furushchev/ROSiOS)
 [![Version](https://img.shields.io/cocoapods/v/ROSiOS.svg?style=flat)](http://cocoadocs.org/docsets/ROSiOS)
 [![License](https://img.shields.io/cocoapods/l/ROSiOS.svg?style=flat)](http://cocoadocs.org/docsets/ROSiOS)
 [![Platform](https://img.shields.io/cocoapods/p/ROSiOS.svg?style=flat)](http://cocoadocs.org/docsets/ROSiOS)
