@@ -1,15 +1,31 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
 language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
-install:
-- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+cache:
+  - bundler
+  - cocoapods
+podfile: Example/Podfile
+xcode_workspace: Example/ROSiOS.xcworkspace
+xcode_scheme: ROSiOS-Example
+osx_image: xcode7.2
+xcode_sdk: iphonesimulator
+env:
+  global:
+    - BUILD_LOG=build.log
+  matrix:
+    - TRAVIS_XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 6'
+    - TRAVIS_XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 5'
+before_install:
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
+  - rvm install ruby-2.2.0
+  - gem install cocoapods
+  - gem install xcpretty
+  - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/ROSiOS.xcworkspace -scheme ROSiOS-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-- pod lib lint --quick
+  - make test
+  - pod lib lint --quick
+after_failure:
+  - echo "=== Xcode Build log ==="
+  - cat $TRAVIS_BUILD_DIR/$BUILD_LOG
+  - echo "=== end of Xcode Build log ==="
+# after_success:
+#   - pod trunk push
