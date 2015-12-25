@@ -12,6 +12,11 @@
 
 + (void)insertROSConfigurationAsInitialInterfaceOfWindow:(UIWindow*)window withNodeName:(NSString*)nodeName
 {
+    [ROSConfigurationUtil insertROSConfigurationAsInitialInterfaceOfWindow:window withNodeName:nodeName anonymous:NO];
+}
+
++ (void)insertROSConfigurationAsInitialInterfaceOfWindow:(UIWindow *)window withNodeName:(NSString *)nodeName anonymous:(BOOL)anon
+{
     // set configuration view before entering main story board
     NSString *path = [[NSBundle mainBundle] pathForResource:@"ROSiOS" ofType:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:path];
@@ -21,6 +26,7 @@
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     [ud setObject:nodeName forKey:@"kROSiOSNodeNameKey"]; // DO NOT CHANGE!
+    [ud setBool:anon forKey:@"kROSiOSNodeAnonymous"]; // DO NOT CHANGE!
     [ud synchronize];
 }
 
