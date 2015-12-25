@@ -27,5 +27,8 @@ after_failure:
   - echo "=== Xcode Build log ==="
   - cat $TRAVIS_BUILD_DIR/$BUILD_LOG
   - echo "=== end of Xcode Build log ==="
-# after_success:
-#   - pod trunk push
+deploy:
+  provider: script
+  script: ./scripts/pod-release.sh
+  on:
+    tags: true
