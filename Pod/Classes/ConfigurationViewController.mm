@@ -114,9 +114,10 @@ static UIStoryboard *_sharedMainStoryBoard = nil;
 
 - (BOOL)connectToROSMaster
 {
-    if ([self isValidIpAddress:[self.uriTextField.attributedText string]]) {
+
+    if ([self isHostValid:[self.uriTextField.attributedText string]]) {
         [self saveHistory];
-        NSString * master_uri = [@"ROS_MASTER_URI=http://" stringByAppendingString:[[self.uriTextField.attributedText string] stringByAppendingString:@":11311/"]];
+        NSString * master_uri = [@"ROS_MASTER_URI=" stringByAppendingString:[self.uriTextField.attributedText string]];
         NSLog(@"%@",master_uri);
         
         NSString * ip = [self getMyIPAddress];
@@ -216,12 +217,11 @@ static UIStoryboard *_sharedMainStoryBoard = nil;
     return addr ? addr : @"0.0.0.0";
 }
 
-- (BOOL)isValidIpAddress:(NSString*)ip
+- (BOOL)isHostValid:(NSString*)host
 {
-    struct in_addr pin;
-    int success = inet_pton(AF_INET,[ip UTF8String],&pin);
-    if(success == 1) return YES;
-    return NO;
+    NSURL* url = [NSURL URLWithString:host];
+    if ([url scheme] && [url host] && [url port]) return YES;
+    else return NO;
 }
 
 @end
