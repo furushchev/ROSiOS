@@ -2,6 +2,8 @@ language: objective-c
 cache:
   - bundler
   - cocoapods
+  - directories:
+    - Example/Pods
 podfile: Example/Podfile
 xcode_workspace: Example/ROSiOS.xcworkspace
 xcode_scheme: ROSiOS-Example
