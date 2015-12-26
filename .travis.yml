@@ -19,8 +19,8 @@ before_install:
   - brew update
   - brew outdated xctool || brew upgrade xctool
   - rvm install ruby-2.2.0
-  - gem install cocoapods
-  - gem install xcpretty
+  - gem install cocoapods --no-document
+  - gem install xcpretty --no-document
   - pod install --project-directory=Example
 script:
   - make test
