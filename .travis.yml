@@ -19,7 +19,6 @@ before_install:
   - rvm install ruby-2.2.0
   - gem install cocoapods --no-document
   - gem install xcpretty --no-document
-  - pod install --project-directory=Example
 script:
   - make test
   - pod lib lint --quick
